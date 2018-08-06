@@ -1,0 +1,11 @@
+<h1>Coach room</h1>
+<!-- <p>Find me in app/views/questions/ask.html.erb</p> -->
+
+<p>Ask your coach!</p>
+
+<form action="/answer" method="get">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="question">
+  <input type="submit" value="Ask!">
+</form>
+
